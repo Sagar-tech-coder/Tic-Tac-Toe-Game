@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+#wrapper{
+    height: 100vh;
+    width: 100%;
+    padding: 0 5vw;
+    background-image: url(/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    place-items: center;
+}
+
+.game-info{
+    color: #fff;
+    border: 1px solid rgb(255, 255, 255, 0.15);
+    background-color: rgb(255, 255, 255, 0.15);
+    /* backdrop-filter: blur('20px'); */
+    border-radius: 1rem;
+    padding: 0.5rem 3rem;
+    text-align: center;
+    position: absolute;
+    top: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.tic-tac-toe{
+    width: 100%;
+    max-width: 20rem;
+    border: 1px solid rgb(255, 255, 255, 0.15);
+    background-color: rgb(255, 255, 255, 0.15);
+    border-radius: 1rem;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    aspect-ratio: 1/1;
+
+    /* position: relative;
+    top: 5rem; */
+}
+
+.box{
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1/1;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.box1, .box2, .box4, .box5{
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.box3, .box6{
+    border-bottom: 2px solid #fff;
+}
+
+.box7, .box8{
+    border-right: 2px solid #fff;
+}
+
+.btn{
+    color: #fff;
+    border: 1px solid rgb(255, 255, 255, 0.15);
+    background-color: rgb(255, 255, 255, 0.15);
+    /* backdrop-filter: blur('20px'); */
+    border-radius: 1rem;
+    padding: 0.5rem 2rem;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    bottom: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}
+
+.btn.active{
+    display: flex;
+}
+
+.win{
+    background-color: green;
+}
+
+footer{
+    color: #fff;
+    /* width: 100%; */
+    padding: 2vh 5vw;
+    position: absolute;
+    bottom: 0;
+    /* background-color: gray; */
+}
+
+footer a{
+    color: yellow;
+    text-decoration: none;
+}
